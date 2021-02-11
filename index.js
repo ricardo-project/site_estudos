@@ -1,5 +1,3 @@
-alert("teste")
-alert(materiais.length)
 var captPag = ["Conjuntos", "O que é função?", "Plano Cartesiano", "Gráfico de funções", "Funções polinomiais", "Função Exponencial", "Função Logarítmica", "Função Trigonométrica", "Função Modular"];
 var subCaptPag = ["Representação de um conjunto", "Condição de um ou mais conjuntos"];
 var conjImg = new Array([/*1*/"https://images5.alphacoders.com/919/thumb-1920-919004.jpg", "Por exemplo, uma biblioteca abriga, em suas estantes, vários conjuntos de elementos, tais denominados <b>livros</b>, de acordo com suas categorias!", false],
