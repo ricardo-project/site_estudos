@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página Principal</title>
+        <meta charset=UTF-8>
+        <link rel="shortcut icon" type="image/x-icon" href="https://sults.com.br/assets/img/segmentos/books-stack-of-three.svg">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Dancing+Script">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Abel">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Quicksand">
+    </head>
+    <style>
+        body {
+            width: 100%;
+            margin-left: -8px;
+            padding-left: 8px;
+            margin-top: -8px;
+            padding-top: 8px;
+            margin-right: -8px;
+            font-family: Roboto;
+            background: no-repeat, rgb(75,75,75);
+        } p {
+            margin: 0px
+        } a {
+            text-decoration: none;
+            color: silver;
+            transition: all 0.2s ease-in-out;
+        } a:hover {
+            color: rgb(100,100,100)
+        } #artcAleat > div, #materias > aside {
+            background: linear-gradient(to left, rgba(120,120,120,0.4), rgb(120,120,120));
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        } #artcAleat > div > img, #materias > aside > img {
+            margin-left: 10px;
+            filter: invert(0.7) drop-shadow(rgba(0,0,0,0.3) 3px 3px 0px);
+        } #artcAleat > div > b, #materias > aside > b {
+            font-family: Abel;
+            filter: drop-shadow(rgba(0,0,0,0.3) 3px 3px 0px);
+            background: -webkit-linear-gradient(rgb(220,220,220), rgb(140,140,140));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent
+        } #artcAleat {
+            position: relative;
+            background: black;
+            display: -webkit-box;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        } #artcAleat > div {
+            position: absolute;
+            z-index: 2;
+            border-radius: 0px 40px 40px 0px;
+            font-size: 30px;
+        } #artcAleat > div > img {
+            height: 60px;
+        } #artcAleat > div > b {
+            font-size: 40px;
+        } #artcAleat > aside {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            bottom: 0
+        } #artcAleat > aside > div {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background: rgb(100,100,100);
+            opacity: 0.6;
+            cursor: pointer;
+            margin: 10px 15px 20px;
+            transition: all 0.3s ease
+        } #artcAleat > aside > div:nth-child(1) {
+            background: rgb(200,200,200);
+        } #artcAleat > article, #artcAleat > article.content > aside {
+            width: 100%;
+            height: 100%;
+        } #artcAleat > article.back {
+            position: absolute;
+			z-index: 1;
+			box-shadow: black 0px 0px 12px inset;
+        } #artcAleat > article.content {
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s ease
+        } #artcAleat > article.content > div {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        } #artcAleat > article.content > div > p.title {
+            width: 100%;
+            font-family: Dancing Script;
+            font-size: 80px;
+        } #artcAleat > article.content > div > p.descrition {
+            filter: drop-shadow(rgba(0,0,0,0.2) 2px 2px 0px);
+            font-family: Raleway;
+            width: 100%;
+            font-size: 18px;
+            text-indent: 60px;
+            margin: 30px auto 0px;
+            max-width: 550px;
+            text-align: justify;
+            color: rgb(160,160,160)
+        } #artcAleat > article.content > aside {
+            position: absolute;
+        } #paginaDestaque, #ifsul {
+            background: linear-gradient(to right, rgb(25,25,25), rgb(70,70,70));
+        } #paginaDestaque {
+            padding: 80px 0px;
+        } #ifsul {
+            margin-left: -80px;
+            padding: 80px;
+        } #paginaDestaque > article {
+            height: 800px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(0,0,0,0.5), black), url('https://c.wallhere.com/photos/d4/4c/1920x1080_px_Chemistry_minimalism_physics_science_Scientists-1306825.jpg!d') no-repeat center;
+            background-size: cover;
+            box-shadow: black 0px 0px 10px inset;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        } #paginaDestaque > article > img {
+            position: absolute;
+            filter: brightness(0.75) contrast(1.1) drop-shadow(rgb(30,30,30) 4px 4px 0px);
+        } #paginaDestaque > article > aside {
+            position: absolute;
+            width: 106px;
+            left: 0px;
+            top: 0px;
+            font-weight: bold;
+            font-size: 35px;
+            font-family: Abel;
+            cursor: pointer;
+            background: linear-gradient(to right, rgba(0,140,255,0.35), rgba(0,140,255,0.1));
+            border-radius: 0px 53px 53px 0px;
+            direction: rtl;
+            transition: all 1s ease-in-out
+        } #paginaDestaque > article > aside:hover {
+            width: 100%
+        } #paginaDestaque > article > aside > div {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            margin: 0px auto;
+            height: 100px;
+            padding: 3px;
+        } #paginaDestaque > article > aside > div > p {
+            direction: ltr;
+            background: -webkit-linear-gradient(rgb(230,230,230), rgb(100,100,100));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent
+        } #paginaDestaque > article > aside > div > img {
+            margin-left: 20px;
+            filter: brightness(1.1) contrast(1.3) saturate(0.4);
+            animation: virus-rotate 20s infinite linear;
+            transition: all 1s ease-in-out
+        } @keyframes virus-rotate {
+            from { transform: rotate(0deg) }
+            to { transform: rotate(360deg) }
+        } #paginaDestaque > article > img:nth-child(1) {
+            left: 3%;
+            animation: img1 2s infinite ease-in-out;
+        } #paginaDestaque > article > img:nth-child(2) {
+            right: 3%;
+            animation: img2f 1.5s infinite cubic-bezier(.7,0,.3,1), img2s 3s infinite cubic-bezier(.7,0,.3,1);
+        } #paginaDestaque > article > img:nth-child(3) {
+            left: 3%;
+            bottom: 10%;
+            animation: img3f 5s infinite cubic-bezier(.5,0,.5,1), img3s 4s infinite cubic-bezier(.5,0,.5,1);
+        } @keyframes img1 {
+            0% { top: 1%; transform: rotate(20deg) }
+            25% { top: 5%; transform: rotate(0deg) }
+            50% { top: 1%; transform: rotate(-20deg) }
+            75% { top: 5%; transform: rotate(0deg) }
+            100% { top: 1%; transform: rotate(20deg) }
+        } @keyframes img2f {
+            0% { top: 32% }
+            50% { top: 28% }
+            100% { top: 32% }
+        } @keyframes img2s {
+            0% { transform: rotate(30deg) }
+            25% { transform: rotate(0deg) }
+            50% { transform: rotate(-30deg) }
+            75% { transform: rotate(0deg) }
+            100% { transform: rotate(30deg) }
+        } @keyframes img3f {
+            0% { transform: rotate(0deg) }
+            20% { transform: rotate(72deg) }
+            40% { transform: rotate(144deg) }
+            60% { transform: rotate(216deg) }
+            80% { transform: rotate(288deg) }
+            100% { transform: rotate(360deg) }
+        } @keyframes img3s {
+            0% { bottom: 8% }
+            25% { bottom: 12% }
+            50% { bottom: 8% }
+            75% { bottom: 12% }
+            100% { bottom: 8% }
+        } #paginaDestaque > article > div {
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        } #paginaDestaque > article > div > p {
+            margin: 0px auto;
+        } #paginaDestaque > article > div > p.destq {
+            margin-left: 0px;
+            font-size: 33px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            margin-left: -10%;
+            font-family: Raleway;
+            letter-spacing: 2px;
+            width: max-content;
+            background: linear-gradient(to right, rgb(0,140,255), rgba(0,140,255,0.6));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        } #paginaDestaque > article > div > p.title {
+            font-size: 150px;
+            background: rgba(0,54,134,0.5) url('fundoTitle.png') repeat-x;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(rgba(0,95,234,0.3) 6px 6px 0px) brightness(1.3);
+            width: min-content;
+            animation: fundoMove 10s infinite linear;
+        } @keyframes fundoMove {
+            from { background-position: 0px -20px }
+            to { background-position: 1920px -20px }
+        } #paginaDestaque > article > div > p.descrition {
+            font-family: Raleway;
+            letter-spacing: 2px;
+            width: 90%;
+            max-width: 700px;
+            margin-top: 50px;
+            font-size: 18px;
+            background: -webkit-linear-gradient(rgb(200,200,200), rgba(200,200,200,0.5));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        } #paginaDestaque > article > div > div {
+            height: 0px;
+            margin-top: 40px;
+        } #materias {
+            background: linear-gradient(to left, rgb(100,100,100), rgb(50,50,50))
+        } #materias > aside {
+            font-size: 60px;
+            width: max-content;
+            border-radius: 0px 60px 60px 0px;
+            padding-right: 25px;
+        } #materias > aside > img {
+            height: 100px;
+        } #listMat {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding: 80px 40px;
+            padding-top: 0px;
+        } #listMat > div {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 40px 0px;
+            height: min-content;
+            filter: drop-shadow(rgba(0,0,0,0.5) 6px 6px 0px)
+        } #listMat > div > div.title {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            width: 100%;
+            font-size: 70px;
+            padding: 10px;
+            border-radius: 60px;
+            font-family: Quicksand
+        } #listMat > div > div.title > p {
+            font-weight: bold;
+            filter: drop-shadow(rgba(0,0,0,0.3) 4px 4px 0px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: -webkit-linear-gradient(white, rgb(150,150,150));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        } #listMat > div > div.title > p > img {
+            height: 100px;
+            width: 100px;
+            margin-left: 15px;
+        } #listMat > div > div.content {
+            height: 0px;
+            width: 100%;
+            position: absolute;
+        } #listMat > div > div.content > div {
+            height: 0px;
+            overflow: hidden;
+            border-radius: 0px 0px 60px 60px;
+        } #listMat > div > div.title, #listMat > div > div.content > div {
+			background: linear-gradient(to right, rgb(120,120,120), rgb(150,150,150))
+		} #listMat > div > div.content > div > div {
+            height: 80px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            font-family: Quicksand;
+        } #listMat > div > div.content > div > div > img {
+            margin-left: 10px;
+            filter: brightness(0) invert(0.7);
+            transition: all 0.5s ease
+        } #listMat > div > div.content > div > div > p, #artcAleat > article.content > div > p.title {
+            text-align: center;
+            font-weight: bold;
+            filter: drop-shadow(rgba(0,0,0,0.3) 3px 3px 0px);
+            background: -webkit-linear-gradient(rgb(190,190,190), rgb(70,70,70));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        } #pesquisa {
+            width: 80%;
+            margin: 0px auto 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(rgba(0,0,0,0.25) 5px 5px 0px)
+        } #pesquisa > img {
+            background: rgb(210,210,210)
+        } #pesquisa > img:nth-child(1) {
+            border-radius: 30px 5px 5px 30px
+        } #pesquisa > img:nth-child(3) {
+            border-radius: 5px 30px 30px 5px;
+            padding-right: 5px
+        } #pesquisa > input[type=text] {
+            width: 60%;
+            font-size: 40px;
+            height: 50px;
+            border-radius: 5px;
+            padding: 5px;
+            background: linear-gradient(to right, rgb(180,180,180), rgba(180,180,180,0.3));
+            color: rgb(50,50,50);
+            font-family: Quicksand;
+            margin: 0px 5px;
+            font-weight: bold;
+            border: none
+        } #ifsul > div {
+            position: relative;
+            overflow: hidden;
+            width: calc(100% + 80px);
+            height: 700px;
+            box-shadow: rgb(0,10,10) 0px 0px 20px inset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s cubic-bezier(.8,0,.2,1);
+        } #ifsul > div > p {
+            width: 90%;
+            max-width: 400px;
+            font-family: Raleway;
+            background: -webkit-linear-gradient(rgba(200,200,200,0.2), rgb(200,200,200));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        } #ifsul > div > div.icon {
+            position: absolute;
+            bottom: -10px;
+            left: -10px;
+            height: 35%;
+        } #ifsul > div > div.icon > img {
+            transform: rotate(12deg);
+            filter: brightness(0.85)
+        } #ifsul > div > div.icon > div {
+            position: absolute;
+            z-index: 1;
+            width: 15%;
+            height: 0px;
+            margin-left: 60%;
+            margin-top: 18%;
+        } #ifsul > div > div.icon > div > div {
+            width: 100%;
+            height: 0px;
+            display: flex;
+            justify-content: center;
+        } #ifsul > div > div.icon > div > div:nth-child(1) {
+            align-items: flex-end
+        } #ifsul > div > div.icon > div > div:nth-child(2) {
+            align-items: center
+        } #ifsul > div > div.icon > div > div > img {
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            filter: contrast(0) brightness(2);
+        } #elipse {
+            transform: scale(0);
+            transition: all 0.4s ease
+        } #ifsul > div > div.icon > div > div > img:hover {
+            width: 150%;
+            filter: contrast(0) brightness(1.5);
+        } #ifsul > div > div.icon2 {
+            height: 40%;
+            display: flex;
+            align-items: center;
+        } #ifsul > div > div.icon2 > img {
+            transition: all 0.4s cubic-bezier(.8,0,.2,1);
+            cursor: pointer
+        } #ifsul > div > div.icon2 > img:hover {
+            height: 130%;
+            filter: brightness(0.9) contrast(1.5)
+        } /*#paginaDestaque > article > div > div > img {
+            height: 70px;
+            filter: invert(0.75);
+            cursor: pointer;
+            animation: setaDestq 1.2s infinite ease-in-out;
+            transition: filter 0.3s
+        } #paginaDestaque > article > div > div > img:hover {
+            filter: invert(1)
+        }*/ @keyframes setaDestq {
+            0% { margin-top: -10px }
+            50% { margin-top: 10px }
+            100% { margin-top: -10px }
+        } /*Configurações da barra de rolagem do corpo da página*/
+        body::-webkit-scrollbar {
+            width: 26px;
+            background: linear-gradient(rgb(200,200,200), rgb(140,140,140));
+            box-shadow: black -1px 0px 3px;
+        } body::-webkit-scrollbar-thumb {
+            box-shadow: 0px 2px 1px;
+            background: linear-gradient(rgb(100,100,100), rgb(70,70,70));
+            border-radius: 13px;
+        } body::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(rgb(50,50,50), rgb(35,35,35));
+        }
+    </style>
+    <body>
+        <section id=paginaDestaque>
+            <article>
+                <img src="https://image.flaticon.com/icons/png/512/184/184671.png" height=20%>
+                <img src="https://image.flaticon.com/icons/png/512/892/892118.png" height=20%>
+                <img src="https://image.flaticon.com/icons/png/512/1696/1696685.png" height=20%>
+                <aside>
+                    <div><img src="https://image.flaticon.com/icons/png/512/2659/2659980.png" height=100%> <p>Confira as últimas informações do Covid-19 no Brasil!</p></div>
+                </aside>
+                <div>
+                    <p class=destq>A matéria de destaque da semana é...</p>
+                    <p class=title>Química!</p>
+                    <p class=descrition>Tudo o que existe é formado por matéria: as estrelas, os planetas, os animais, e até mesmo você! A matéria pode se moldar das mais diversas formas, desde os elementos mais fundamentais até as substâncias complexas que constituem o corpo dos seres vivos. A Química é uma aventura única para quem deseja saber do que constituí o Universo!</p>
+                    <!--div>
+                        <div>
+                            <img src="https://image.flaticon.com/icons/png/512/32/32233.png">
+                            <p>Ver matérias de Química!</p>
+                        </div>
+                    </div-->
+                </div>
+            </article>
+        </section>
+        <main>
+            <section id=artcAleat>
+                <div><b>Selecionadas para você</b> <img src="https://cdn.onlinewebfonts.com/svg/img_260405.png"></div>
+            </section>
+            <section id=materias>
+                <aside><b>Todas as matérias</b> <img src="https://image.flaticon.com/icons/svg/166/166088.svg"></aside>
+                <article id=listMat></article>
+                <article id=pesquisa>
+                    <img src="https://img.icons8.com/pastel-glyph/2x/search--v2.png" height=60px> <input type=text> <img src="https://img.icons8.com/all/500/empty-trash.png" height=60px>
+                </article>
+                <article id=ifsul>
+                    <div>
+                        <div class=icon>
+                            <div>
+                                <div>
+                                    <img src="https://www.nicepng.com/png/full/97-973621_location-01-ponto-de-referencia-imagem.png" width=120%>
+                                </div>
+                                <div>
+                                    <div>
+                                        <svg id=elipse width=100 height=50>
+                                            <ellipse cx=50 cy=25 rx=30 ry=15 style="fill: rgb(140,140,140)">
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="https://pngimage.net/wp-content/uploads/2018/06/mapa-rio-grande-do-sul-png-7.png" height=100%>
+                        </div>
+                        <p>Conheça a instituição do criador do site!</p>
+                        <div class=icon2>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/573px-Logotipo_IFET.svg.png" height=100%>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </body>
+    <script type="text/javascript" src="materias.js"></script>
+    <script>
+        /*var condAudio = false
+        var varaudio
+        var oscilador
+        var changeFrequency = function() { changeFrequencyFunc() }
+        function changeFrequencyFunc() {
+            oscilador.frequency.value = 100 + 1900*(1 - event.clientX/window.innerWidth)
+        }
+        document.querySelector("input[type=button]").addEventListener("click", function() {
+            if(condAudio == false) {
+                varaudio = new AudioContext()
+                oscilador = varaudio.createOscillator()
+                ganho = varaudio.createGain()
+                ganho.connect(varaudio.destination)
+                oscilador.connect(ganho)
+                oscilador.type = "sine"
+                ganho.gain.value = 0.02
+                changeFrequencyFunc()
+                oscilador.start(0)
+                condAudio = true
+                document.body.addEventListener("mousemove", changeFrequency)
+            } else {
+                changeFrequencyFunc()
+                oscilador.stop()
+                condAudio = false
+            }
+        })*/
+        //Química - https://c.wallhere.com/photos/d4/4c/1920x1080_px_Chemistry_minimalism_physics_science_Scientists-1306825.jpg!d
+        //Matemática - https://segredosdomundo.r7.com/wp-content/uploads/2018/07/destaque-44.jpg
+        //Física - https://wallpaperaccess.com/full/1133458.jpg
+        //Biologia - https://www.itl.cat/pngfile/big/19-198313_back-to-64-dna-wallpapers-hd-darkness.jpg
+        //Português - https://images.wallpaperscraft.com/image/book_pages_reading_mood_49140_1920x1080.jpg
+        //História - https://ipemig.com.br/wp-content/uploads/2019/07/Banner-Hist%C3%B3ria-do-Brasil.jpg
+        //Geografia - https://c.wallhere.com/photos/d0/04/globe_country_ball_geography-587550.jpg!d
+        //Programação - https://data.1freewallpapers.com/download/code-programming-text-technology-1920x1080.jpg
+        //Informática - https://gades-training.com/img/tech.jpg
+        var opt = new Array()
+        var artcElement = document.querySelector("#artcAleat")
+        var artcIF = document.querySelector("#ifsul > div")
+        var iconArtcIF = artcIF.querySelector("div.icon2 > img")
+        var iconPointIF = artcIF.querySelector("div.icon > div > div > img")
+        var elipseIF = document.querySelector("#elipse")
+        var virusAside = document.querySelector("#paginaDestaque > article > aside")
+        var asideOpt = document.createElement("aside")
+        artcElement.appendChild(asideOpt)
+        var countSectIntrod = 0
+        var wW
+        var conjDivIntrod = new Array()
+		let artcBck = document.createElement("article")
+		artcBck.className = "back"
+		artcElement.appendChild(artcBck)
+        var vetorNum = new Array()
+        for(let j = 0; j < materiais.length; j++) {
+            vetorNum.push(j)
+            let divPrinc = document.createElement("div")
+            let txtDiv = document.createElement("div")
+            let contentDiv = document.createElement("div")
+            let contInt = document.createElement("div")
+            divPrinc.style.zIndex = (materiais.length - j)
+            txtDiv.className = "title"
+            contentDiv.className = "content"
+            txtDiv.innerHTML = '<p>' + materiais[j][0][0] + ' <img src="' + materiais[j][0][1] + '"></p>'
+            contentDiv.appendChild(contInt)
+            divPrinc.appendChild(txtDiv)
+            divPrinc.appendChild(contentDiv)
+            const constHeight = materiais[j].length - 1
+            for(let y = 1; y < materiais[j].length; y++) {
+                let divMat = document.createElement("div")
+                if(y == 1) {
+                    divMat.style.marginTop = "70px"
+                } const greyScale = 60 + 40*(1 - y)/(constHeight - 1)
+                divMat.style.background = "rgb(" + greyScale + "," + greyScale + "," + greyScale + ")"
+                divMat.innerHTML = '<p>' + materiais[j][y][0] + '</p> <img src="' + materiais[j][y][1] + '" width=40 height=40>'
+                let angleImg = 0
+                let setAngleImg
+                let imageDiv = divMat.querySelector("img")
+                function setFunct() {
+                    angleImg = 1 - angleImg
+                    imageDiv.style.transform = "rotate(" + 10*(2*angleImg - 1) + "deg)"
+                } divMat.addEventListener("mouseenter", function() {
+                    imageDiv.style.filter = "brightness(0) invert(0.85)"
+                    setFunct()
+                    setAngleImg = setInterval(function() { setFunct() }, 500)
+                })
+                divMat.addEventListener("mouseleave", function() {
+                    imageDiv.style.filter = "brightness(0) invert(0.7)"
+                    clearInterval(setAngleImg)
+                    imageDiv.style.transform = "rotate(0deg)"
+                })
+                contInt.appendChild(divMat)
+            } txtDiv.addEventListener("mouseenter", function() { contInt.style.height = (70 + 80*constHeight) + "px" })
+            txtDiv.addEventListener("mouseleave", function() { contInt.style.height = "0px" })
+            contInt.addEventListener("mouseenter", function() { contInt.style.height = (70 + 80*constHeight) + "px" })
+            contInt.addEventListener("mouseleave", function() { contInt.style.height = "0px" })
+            contInt.style.transition = "height " + constHeight*0.1 + "s ease"
+            document.querySelector("#listMat").appendChild(divPrinc)
+        } for(let y = 0; y < 6; y++) {
+            const yCons = y
+            const numAleat = Math.round(Math.random()*(vetorNum.length - 1))
+            let element = materiais[vetorNum[numAleat]]
+            const numAleatMat = Math.round(Math.random()*(element.length - 2)) + 1
+            let matElement = element[numAleatMat]
+            let divOpt = document.createElement("div")
+            let artcOpt = document.createElement("article")
+            let bckAside = document.createElement("aside")
+            let divP = document.createElement("div")
+            let pTitle = document.createElement("p")
+            let pDescrit = document.createElement("p")
+            if(y == 0) {
+                artcOpt.id = "firstSect"
+            } artcOpt.className = "content"
+            bckAside.style.background = "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.95)), url('" + matElement[2] + "') no-repeat center"
+            bckAside.style.backgroundSize = "cover"
+            pTitle.className = "title"
+            pDescrit.className = "descrition"
+            pTitle.textContent = matElement[0]
+            pDescrit.innerHTML = matElement[3] + " <a href='https://google.com'>Clique aqui para ver artigo completo.</a>"
+            divOpt.addEventListener("click", function() {
+                document.querySelector("#firstSect").style.marginLeft = -100*yCons + "%"
+                conjDivIntrod[countSectIntrod].style.background = "rgb(100,100,100)"
+                countSectIntrod = yCons
+                conjDivIntrod[countSectIntrod].style.background = "rgb(200,200,200)"
+            });
+            divP.appendChild(pTitle)
+            divP.appendChild(pDescrit)
+            asideOpt.appendChild(divOpt)
+            artcOpt.appendChild(bckAside)
+            artcOpt.appendChild(divP)
+            artcElement.appendChild(artcOpt)
+            conjDivIntrod.push(divOpt)
+            vetorNum.splice(numAleat, 1)
+        }
+        /*var ctx = document.querySelector("canvas").getContext("2d")
+        for(let k = 1; k <= 4; k++) {
+            ctx.beginPath()
+            ctx.fillStyle = "rgb(0," + Math.round(95/(2 - k/4)) + "," + Math.round(234/(2 - k/4)) + ")"
+            if(k == 4) {
+                alert("rgb(0," + Math.round(95/(2 - k/4)) + "," + Math.round(234/(2 - k/4)) + ")")
+            }
+            const kX = Math.PI*(k - 1)*k/4
+            const kY = 10*(k - 1 - Math.floor(k/3))
+            for(let e = 0; e <= 1920; e++) {
+                const eX = Math.cos(e*Math.PI/320 + kX)
+                const eY = 90 - 50*eX + kY
+                ctx.lineTo(e, eY)
+            } ctx.lineTo(1920, 200)
+            ctx.lineTo(0, 200)
+            ctx.fill()
+        }*/
+        artcIF.style.background = "linear-gradient(rgba(0,10,10,0.6), rgb(0,10,10)), url('ifsul_" + (Math.round(2*Math.random()) + 1) + ".jpg') no-repeat center"
+        artcIF.style.backgroundSize = "100% auto"
+        iconArtcIF.addEventListener("mouseenter", function() {
+            artcIF.style.backgroundSize = "110% auto"
+        })
+        iconArtcIF.addEventListener("mouseleave", function() {
+            artcIF.style.backgroundSize = "100% auto"
+        })
+        iconPointIF.addEventListener("mouseenter", function() { elipse.style.transform = "scale(1)" })
+        iconPointIF.addEventListener("mouseleave", function() { elipse.style.transform = "scale(0)" })
+        virusAside.addEventListener("mouseenter", function() { saturateVirus(1) })
+        virusAside.addEventListener("mouseleave", function() { saturateVirus(0) })
+        document.addEventListener("DOMContentLoaded", redimensFunc())
+        window.addEventListener("resize", function() { redimensFunc() })
+        function redimensFunc() {
+            wW = window.innerWidth
+            let border = 350
+            if(wW < 1200) {
+                border = 7*wW/24
+            } document.querySelector("#paginaDestaque > article").style.borderRadius = "0px " + border + "px"
+            artcIF.style.borderRadius = border + "px 0px"
+            document.querySelector("#ifsul").style.borderTopLeftRadius = (border + 80) + "px"
+        } function saturateVirus(newconst) {
+            virusAside.querySelector("div > img").style.filter = "brightness(1.1) contrast(1.3) saturate(" + (0.4 + newconst*0.5) + ")"
+        }
+    </script>
+</html>

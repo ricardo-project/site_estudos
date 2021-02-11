@@ -1,0 +1,585 @@
+body {
+    margin-left: -8px;
+    padding-left: 8px;
+    margin-top: -8px;
+    padding-top: 8px;
+    margin-right: -8px;
+    font-family: Roboto;
+    background: no-repeat, rgb(75,75,75);
+} header {
+    position: relative;
+    z-index: 2;
+} footer {
+    overflow: hidden;
+    padding: 40px;
+} footer > p {
+    text-align: center;
+    margin-top: 30px
+} footer > div > div > p {
+    font-size: 35px;
+    font-family: Roboto Condensed;
+} footer > div > span > a > img, footer > p > span > img {
+    filter: brightness(0) invert(1);
+    margin: 5px;
+} footer > div > span > a > img:hover {
+    height: 70px;
+} footer > p > span > img:hover {
+    filter: brightness(0) invert(0.75);
+} footer > div > div > span > img {
+    margin-right: 15px;
+    border: 0px outset rgb(150,150,150);
+    box-shadow: black 0px 0px 6px;
+} footer > div > div > span > img:hover {
+    border-width: 5px;
+    border-radius: 45px;
+} footer > div > div > p, footer > p {
+    background: -webkit-linear-gradient(white, rgb(150,150,150));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} main {
+    background: linear-gradient(rgb(60,60,60), rgb(40,40,40));
+    padding-bottom: 75px;
+} a {
+    text-decoration: none;
+    color: silver;
+} a:hover {
+    color: sandybrown
+} a:active {
+    color: tomato;
+} .b {
+    font-style: normal;
+    display: inline-block;
+    text-indent: 0px
+} .b > b {
+    color: rgb(150,150,150)
+} .b > div {
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(black 0px 0px 6px)
+} .b > div > div.b1 {
+    width: 0;
+    height: 0;
+    transition: left 0.3s ease-in-out, top 0.3s ease-in-out, right 0.3s ease-in-out, bottom 0.3s ease-in-out;
+} .b > div > div.b2 {
+    overflow: hidden;
+    background: rgb(122,122,122);
+    border-radius: 25px;
+    display: flex;
+} .b > div > div.b2 > aside {
+    font-family: Raleway;
+    width: 300px;
+    height: 250px;
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px;
+    background: linear-gradient(rgb(122,122,122), rgb(100,100,100));
+    box-shadow: rgba(0,0,0,0.7) 0px 0px 10px inset;
+    border-radius: 19px;
+    overflow: auto;
+} .b > div > div.b2 > aside > p {
+    text-indent: 40px;
+    margin-top: 20px
+} .b > div > div.b2 > aside > p.title {
+    text-indent: 0px;
+    font-size: 25px;
+    margin: 0px;
+    font-weight: bold;
+    text-align: center
+} .b > div > div.b2 > div {
+    border-radius: 15px;
+    overflow: hidden;
+} .b > div > div.b2 > div > img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease
+} .b > div > div.b2 > div > img:hover {
+    width: 120%;
+    height: 120%;
+    margin-left: -10%;
+    margin-top: -10%;
+    filter: brightness(0.8) contrast(1.2)
+} .divContent {
+    position: relative;
+    z-index: 1;
+    padding: 13px
+} .img {
+    position: relative;
+    z-index: 1;
+    padding: 16px
+} #sectImg > article {
+    height: 100%;
+} .divContent > div {
+    box-shadow: black 0px 0px 10px inset;
+    font-size: 20px;
+    font-family: Quicksand;
+} figure {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+} .img > figure {
+    box-shadow: black 0px 0px 8px;
+} #introdPag {
+    font-family: Dancing Script;
+    background: linear-gradient(to left, rgb(180,0,84), rgb(45,0,21));
+    padding-bottom: 80px;
+    transition: margin-bottom 0.2s;
+} #introdPag > article > div > div > p.titleBckSpecial {
+    filter: drop-shadow(rgba(0,0,0,0.5) 4px 4px 0px);
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    font-size: 100px;
+} #introdPag > article {
+    position: relative;
+    overflow: hidden;
+} #introdPag > article > div {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.95));
+    height: 700px;
+} #introdPag > article > canvas {
+    background-color: white;
+    box-shadow: black 0px 0px 20px inset;
+} #introdPag > article > div > div > hr {
+    border: none;
+    width: 120px;
+    height: 6px;
+    background-color: rgba(155,155,155,0.4);
+} .divInform {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 16px;
+    overflow: hidden;
+    background: linear-gradient(rgb(90,90,90), rgb(60,60,60));
+    box-shadow: rgb(40,40,40) 0px 0px 10px inset;
+    width: 50px;
+    height: 50px;
+    border-radius: 41px;
+    margin: 0px auto;
+    color: rgb(200,200,200);
+} .divInform > div > div.icon {
+    display: flex
+} .divInform > div > div.content {
+    position: relative;
+    z-index: 1;
+    margin-top: 16px;
+    text-align: justify;
+    width: 500px;
+} .divInform > div > div.content > p.title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+} #divInform {
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 35px;
+    direction: rtl
+} #divInform > div {
+    margin-right: 10px;
+} #divInform > div.back {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(150,150,150,0.5));
+    margin: 10px -10px 0px 0px;
+    opacity: 0;
+} #divInform > div.icon {
+    width: min-content;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center
+} #divInform > div.icon > img {
+    filter: invert(1)
+} #divInform > div > div {
+    width: 500px;
+    text-align: justify;
+    color: white;
+    font-size: 18px;
+    direction: ltr;
+    position: relative;
+    z-index: 1
+} #divInform > div > div, .divInform > div > div.content {
+    font-family: Titillium Web
+} #menu {
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 2;
+    box-shadow: black 0px 0px 10px inset, rgba(0,0,0,0.4) 0px 0px 8px;
+    overflow: auto;
+} #menu > article {
+    filter: drop-shadow(rgba(127,127,127,0.7) 0px 0px 6px)
+} #menu > article > div {
+    position: relative;
+    z-index: 1;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    height: 15px;
+    background: linear-gradient(to right, rgb(190,140,160) calc(100% - 220px), rgb(255,191,207)) no-repeat;
+    transition: all 0.2s ease;
+} #menu > article > aside > div {
+    width: 200px;
+    height: 55px;
+    margin: 10px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, rgb(172,127,148), rgb(190,140,160));
+    color: rgb(45,0,21);
+    border-radius: 20px 20px 0px 0px;
+    font-family: Titillium Web;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease;
+} #menu > article > aside > div:hover {
+    color: rgb(196,191,196);
+} #content {
+    margin: 75px auto 0px auto;
+    text-align: justify;
+    font-size: 18px;
+    color: rgba(200,200,200);
+    background: linear-gradient(rgb(40,40,40), rgb(25,25,25));
+    padding: 60px;
+    border-radius: 60px;
+    box-shadow: black 0px 0px 15px inset;
+} figure > figcaption {
+    text-align: center;
+    filter: opacity(0);
+    color: silver;
+    width: 80%;
+} #imgDestaque {
+    z-index: 1;
+    display: none;
+    cursor: zoom-in;
+    box-shadow: black 3px 3px 5px;
+} #content > hr {
+    width: 60%;
+    background-color: rgb(50,50,50);
+} footer > hr {
+    width: 50%;
+    max-width: 400px;
+    margin-bottom: 40px;
+    background-color: rgb(100,100,100);
+} #content > hr, footer > hr {
+    height: 6px;
+    border: none;
+} #menuIniciar {
+    padding: 20px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: margin-top 0.4s;
+} #menuIntrod {
+    padding-top: 4px;
+    padding-bottom: 2px;
+    overflow: hidden;
+} .space {
+    margin-bottom: 20px
+} .paragopt {
+    padding: 5px 10px;
+} .opt {
+    text-shadow: rgba(0,0,0,0.5) 1px 1px 1px;
+    color: white;
+} .navOpt {
+    background-color: black;
+    height: 0px;
+    border-radius: 0px 0px 18px;
+    transition: height 0.8s, border-color 0.8s;
+} .bckOpt {
+    border-radius: 0px 18px 0px 0px;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3));
+} .mrgOpt {
+    margin: 0px 5px;
+} .mrgOpt2 {
+    margin: auto 5px;
+} .shadowOpt {
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+} .borderOpt {
+    border-radius: 0px 18px 18px 0px;
+} .borderOpt:hover {
+    border-color: rgb(255,0,170);
+    color: silver;
+    background-color: black;
+} .txtSpc {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+} #pIntrod {
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(200,200,200,0.6);
+} .divMenuLateral {
+    margin: 0px auto;
+} #menuLateral > div.divMenuLateral {
+    margin-top: 90px;
+    width: 340px;
+    padding: 15px;
+} #introdPag > article > div > div > span > img, .divInform > div > div > img {
+    filter: invert(0.8)
+} #menuIniciar > a > span > img {
+    height: 80px;
+    border-radius: 30px;
+    filter: invert(0.7);
+} #menuMatDiv > span > img {
+    background-color: transparent;
+    filter: invert(1);
+} #menuMatDiv > span > img:hover, #introdPag > article > div > div > span > img:hover, #menuIniciar > a > span > img:hover {
+    filter: invert(0.5)
+} #menuLateral > p > img {
+    margin: 10px;
+    margin-right: 30px;
+} #menuLateral > p > img:hover {
+    height: 60px;
+    border-radius: 30px;
+    filter: brightness(1.5);
+} #menuLateral > p {
+    width: 350px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0px 0px 70px 0px;
+    box-shadow: black 0px 0px 7px;
+    background: linear-gradient(rgb(160,160,160), rgb(130,130,130));
+    position: fixed;
+} #headSectImg > p {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    text-align: center;
+    color: rgb(225,225,225);
+    text-shadow: black 2px 2px 2px;
+    margin: 0px auto;
+    transition: font-size 0.2s;
+} #menuLateral {
+    width: 450px;
+    left: -450px;
+    background: linear-gradient(to right, rgb(90,0,42), rgba(90,0,42,0));
+    top: 0px;
+} #menuLateral > div.divMenuLateral > p {
+    text-align: center;
+    margin-bottom: 20px;
+} #menuLateral > div.divMenuLateral > p > b {
+    font-family: Dancing Script;
+    font-size: 80px;
+    filter: drop-shadow(rgb(150,150,150) 3px 3px 3px);
+} #divMenuPesq > div > input {
+    border: none;
+    margin: 5px 3px;
+    font-family: Raleway;
+    font-size: 23px;
+    padding: 6px;
+    padding-bottom: 5px;
+} #divMenuPesq > div > input::-webkit-input-placeholder {
+    background: -webkit-linear-gradient(slategrey, rgb(70,70,70));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} #divMenuPesq > div > input:hover {
+    color: rgb(100,100,100);
+} .titleBckSpecial {
+    background: /*url('https://matematicabasica.net/wp-content/uploads/2019/02/funcoes-trigonometricas-7.png') no-repeat, */-webkit-linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} #backMenuLateral {
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.8));
+} #menuMatDiv {
+    overflow: auto;
+} #menuMatDiv > div {
+    display: -webkit-box;
+    overflow: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 8px;
+    height: 100%;
+} #divMenuPesq {
+    margin: 5px;
+    border-radius: 30px;
+    background-color: rgb(190,140,160);
+    width: min-content;
+} #divMenuPesq > div > span {
+    padding: 0px;
+    width: 38px;
+    height: 38px;
+} .iconsPsq, #divMenuPesq {
+    padding: 3px;
+} #sectImg {
+    z-index: 3;
+    background: linear-gradient(rgb(45,0,21,0.5), rgb(45,0,21,0.9));
+    opacity: 1;
+} #sectProgress {
+    z-index: 4;
+    cursor: progress;
+} .classFixed {
+    position: fixed;
+    height: 100%;
+} .paragCapt > img {
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.5));
+    margin-right: 20px;
+    border-radius: 25px;
+} .paragCapt {
+    font-weight: bold;
+    text-align: left;
+    font-size: 50px;
+    margin: 10px;
+} .subCapt {
+    color: rgba(150,150,150,0.75);
+    font-size: 35px;
+    font-family: Abel;
+    text-align: left;
+} ul {
+    padding-right: 30px
+} .parag {
+    margin: 30px 0px;
+} p.parag, .divInform > div > div > p {
+    text-indent: 60px
+} li.parag, .divInform > div > div > p.title {
+    text-indent: 0px
+} .divContent > div > p.parag {
+    padding: 30px
+} .divContent > div > p.parag {
+    margin: 0px
+} .imgIconImg {
+    margin: 7px;
+    border-radius: 50%;
+    filter: contrast(1) brightness(1);
+} .imgIconImg:hover {
+    width: 6%;
+    filter: contrast(1.4) brightness(0.9);
+} .setaSectImg {
+    position: relative;
+    z-index: 1;
+    filter: invert(0.85);
+} .setaSectImg:hover {
+    filter: invert(0.6);
+} #headSectImg > span > img {
+    float: right;
+    filter: brightness(1.3) drop-shadow(black 2px 2px 3px);
+} #headSectImg > span > img:hover {
+    filter: brightness(1.1) drop-shadow(black 2px 2px 3px);
+} .coluna {
+    column-count: 2;
+    column-gap: 30px;
+} .coluna > .img {
+    width: 90%;
+    margin: 0px auto;
+} figure > img, figure > figcaption {
+    transition: all 0.25s ease;
+} .img, .divContent {
+    background: linear-gradient(rgb(180,0,84), rgb(90,0,42));
+    border-radius: 10px;
+} .iconsPsq, #divMenuPesq > div > input {
+    background-color: white;
+} .opt, .navOpt {
+    font-family: Titillium Web;
+    font-size: 16px;
+    border-left: 3px solid rgb(200,200,200);
+    overflow: hidden;
+} #menuLateral, #backMenuLateral {
+    z-index: 3;
+} #divMenuPesq > div > span:nth-child(1), #divMenuPesq > div > span:nth-child(1) > img {
+    border-radius: 20px 3px 3px 20px;
+} #divMenuPesq > div > span:nth-child(3), #divMenuPesq > div > span:nth-child(3) > img {
+    border-radius: 3px 20px 20px 3px;
+} #menuMatDiv > span > img {
+    transition: all 0.4s ease-in-out;
+} #menuIntrod > div, #menu > article > aside {
+    display: -webkit-box;
+    width: min-content;
+    margin: 0px auto;
+} #menuIntrodNav, #menuIntrod {
+    position: relative;
+    z-index: 2;
+} #menu, #menuIniciar > a > span > img, #menu > article > aside > div, .imgIlustr, .txtSpc {
+    padding: 10px;
+} .iconsPsq:hover, #divMenuPesq > div > input:hover {
+    background-color: rgb(200,200,200);
+} body, #backMenuLateral, #menuIntrod > div, .b > div {
+    opacity: 0
+} #divInform, #divInform > div.back, #divInform > div.icon > img, .divInform, .divInform > div > div > img, .transt1 {
+    transition: all 0.8s ease-in-out
+} .transt2, #menuLateral > p > img, #menuLateral > p {
+    transition: all 0.25s ease-in-out;
+} #menuMatDiv > span > img, footer > div > div > span > img {
+    border-radius: 40px;
+} ul, p, figure, .divContent > div, #divMenuPesq > div > span {
+    margin: 0px
+} a, footer > div > span > a > img, footer > p > span > img, footer > div > div > span > img, #introdPag > article > div > div > span > img, #menuIniciar > a > span > img {
+    transition: all 0.2s ease-in-out;
+} #divMenuPesq > div > input, figure > img, figure, .divContent > div, #introdPag > article > div > div > hr, #content > hr, footer > hr {
+    border-radius: 3px;
+} #content > div, #content > img, #content > p, #content > ul, #content > article {
+    transition: all 0.6s ease
+} .iconsPsq, #divMenuPesq > div > input, .imgIconImg, #menuLateral, #backMenuLateral, #menuIntrod > div, .b > b, .b > div, .b > div > div.b2 {
+    transition: all 0.3s ease-in-out
+} .b > div > div, #divInform > div.back, #divInform, #imgDestaque, #sectImg > article, #introdPag > article > canvas, figure > figcaption, .navOpt {
+    position: absolute
+} body, figure > img, #sectImg > article, #introdPag > article > div, #backMenuLateral, #sectImg, #sectProgress, #menuIntrod, .divInform > div > div.icon {
+    width: 100%;
+} figure, #divMenuPesq > div, #menu > article > aside > div, footer > div, .b > div > div, .b > div > div.b2 > div, footer > p, .divInform, .divInform > div > div.icon {
+    justify-content: center;
+} .paragCapt, #menuIniciar, #menuMatDiv, #divMenuPesq > div, #menu > article > aside > div, #sectImg > article, footer > p, footer > div, footer > div > div, figure {
+    display: flex;
+    align-items: center;
+} #menuIniciar, #menu {
+    background: linear-gradient(to right, rgb(45,0,21), rgb(90,0,42));
+} figure, .b > b, .b > div > div.b2 > div, #divInform, .divInform, .opt, .imgIconImg, .iconsPsq, #menuIniciar > a > span > img, #menuMatDiv > span > img, #menuLateral > p > img, .navOpt, #menu > article > aside > div, footer > div > span > a > img, footer > div > div > span > img {
+    cursor: pointer;
+} /*Configurações da barra de rolagem do corpo da página*/
+body::-webkit-scrollbar {
+    width: 26px;
+    background: linear-gradient(rgb(200,200,200), rgb(140,140,140));
+    box-shadow: black -1px 0px 3px;
+} body::-webkit-scrollbar-thumb {
+    box-shadow: 0px 2px 1px;
+    background: linear-gradient(rgb(100,100,100), rgb(70,70,70));
+    border-radius: 13px;
+} body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgb(50,50,50), rgb(35,35,35));
+} /*Configurações da barra de rolagem do menus do conteúdo e das opções alternativas*/
+#menu::-webkit-scrollbar, #menuMatDiv > div::-webkit-scrollbar {
+    height: 20px;  
+} #menu::-webkit-scrollbar-thumb, #menuMatDiv > div::-webkit-scrollbar-thumb {
+    border: 2px outset rgb(195,127,159);
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.65));
+    border-radius: 10px;
+} /*Configurações da barra de rolagem do parágrafo das "divs" explicativas*/
+.b > div > div.b2 > aside::-webkit-scrollbar {
+    background: rgba(50,50,50,0.8);
+    width: 16px;
+} .b > div > div.b2 > aside::-webkit-scrollbar-thumb, .b > div > div.b2 > aside::-webkit-scrollbar {
+    border-radius: 8px
+} .b > div > div.b2 > aside::-webkit-scrollbar-thumb, .divContent > div {
+    background: linear-gradient(rgb(90,0,42), rgb(45,0,21))
+} /*CSS Responsivo (para descrição da imagem)*/
+@media only screen and (min-width: 0px) {
+    #headSectImg > p {
+        font-size: 16px;
+    }
+} @media only screen and (min-width: 720px) {
+    #headSectImg > p {
+        font-size: 22px;
+    }
+} @media only screen and (min-width: 1280px) {
+    #headSectImg > p {
+        font-size: 30px;
+    }
+} @media only screen and (max-height: 800px) and (min-width: 720px) {
+    #headSectImg > p {
+        font-size: 22px;
+    }
+} @media only screen and (max-height: 480px) {
+    #headSectImg > p {
+        font-size: 16px;
+    }
+}

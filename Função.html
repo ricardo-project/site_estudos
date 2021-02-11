@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Funções Matemáticas</title>
+        <meta charset=UTF-8>
+        <link rel="shortcut icon" type="image/x-icon" href="https://cdn.onlinewebfonts.com/svg/img_353781.png">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Abel">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Dancing+Script">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium+Web">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Quicksand">
+        <link rel=stylesheet href="style.css"> <!--Arquivo CSS com valores comuns para todas as páginas deste site!-->
+    </head>
+    <body>
+        <style>
+            /* - Esta tag <style> serve para inserir valores específicos para atributos de elementos HTML desta página em questão!
+            - Os valores para atributos CSS usados em todas as páginas deste site de estudos estão em um arquivo CSS de nome "index", linkado no cabeçalho (Confira tag <head> acima!)*/
+            #introdPag > p {
+                font-size: 35px;
+                background: -webkit-linear-gradient(rgb(255,191,207,0.6), rgb(127,95,103,0.6));
+                -webkit-background-clip: text;
+                background-clip: text;
+                text-align: center;
+                color: transparent;
+                margin-top: 40px;
+            } #introdPag > div {
+                display: -webkit-box;
+                position: relative;
+                width: min-content;
+                filter: opacity(0.5) drop-shadow(rgba(0,0,0,0.25) 3px 3px 2px);
+                margin: 0px auto;
+            } #introdPag > div > div {
+                width: 30px;
+                height: 30px;
+                margin: 0px 15px;
+                border-radius: 15px;
+                cursor: pointer;
+                background: rgb(127,95,103);
+                transition: all 0.3s ease-in-out;
+            } #introdPag > div > div.reta {
+                cursor: default;
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                position: absolute;
+                z-index: -1;
+                display: flex;
+                align-items: center;
+            } #introdPag > div > div.reta > div {
+                width: 100%;
+                height: 8px;
+                border-radius: 4px;
+                background: rgb(127,95,103);
+            } #introdPag > div > div.reta#retaIntrodPag > div {
+                background: linear-gradient(to right, rgb(255,191,207) 100%, transparent) no-repeat;
+                background-position: -255px 0px;
+                transition: all 0.3s ease-in-out;
+            }
+        </style>
+        <section id=sectProgress class=classFixed></section>
+        <section id=sectImg class=classFixed>
+            <article style="justify-content: center">
+                <img id=imgDestaque>
+            </article>
+            <article id=artcSetas>
+                <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/arrowheadleft_110946.png" width=5% class="imgIconImg setaSectImg">
+                <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/arrowheadleft_110946.png" width=5% class="imgIconImg setaSectImg" style="transform: rotate(180deg)">
+            </article>
+            <article id=headSectImg style="display: block">
+                <span title="Fechar aba da imagem"><img src="https://image.flaticon.com/icons/png/512/106/106830.png" class=imgIconImg width=5%></span>
+                <p></p>
+            </article>
+        </section>
+        <header>
+            <section id=menuIniciar>
+                <a href="https://ricardo-project.github.io/teclado-virtual"><span title="Voltar à página principal"><img src="https://sults.com.br/assets/img/segmentos/books-stack-of-three.svg" height=100%></span></a>
+                <article id=menuMatDiv>
+                    <div>
+                        <div id=divMenuPesq>
+                            <div>
+                                <span title="Faça uma pesquisa!" style="margin-left: 5px"><img src="https://img.icons8.com/cotton/2x/search--v2.png" class=iconsPsq height=32></span>
+                                <input type=text placeholder="Digite algo!" maxlength=100>
+                                <span title="Limpe o campo de pesquisa!" style="margin-right: 5px"><img src="https://img.icons8.com/color/452/recycle-bin.png" id=iconLixeira class=iconsPsq height=32></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span title="Abrir menu de pesquisa!"><img src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png" height=80></span>
+                </article>
+                <article id=menuLateral class=classFixed>
+                    <p><img src="https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/512/close-icon.png" height=50></p>
+                    <div class=divMenuLateral>
+                        <p><b class=titleBckSpecial>Menu</b></p>
+                    </div>
+                </article>
+            </section>
+            <section id=introdPag>
+                <aside id=menuIntrod><div></div></aside>
+                <aside id=menuIntrodNav></aside>
+                <article>
+                    <canvas height=700></canvas>
+                    <div>
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: absolute; text-align: center">
+                            <p class=titleBckSpecial><b>Funções Matemáticas</b></p>
+                        </div>
+                        <div id=divInform></div>
+                            <!--div class=back></div>
+                            <div class=icon>
+                                <img src="https://image.flaticon.com/icons/png/512/684/684802.png" height=50 style="filter: invert(1)">
+                            </div>
+                            <div>
+                                <div class=content></div>
+                            </div>
+                        </div-->
+                        <div style="text-align: center; padding-top: 50px; position: relative">
+                            <span title="Esta página trata-se de um projeto com propósito educacional para todos!"><img src="https://edumoreira.com.br/online/wp-content/uploads/2018/06/icon_2248.png" height=80></span>
+                            <hr>
+                            <p><b id=pIntrod>Educação</b></p>
+                        </div>
+                    </div>
+                </article>
+                <p><b>Senóide</b></p>
+                <div>
+                    <div class=reta><div></div></div>
+                    <div class=reta id=retaIntrodPag><div></div></div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section id=menu>
+                <article>
+                    <aside></aside>
+                    <div></div>
+                </article>
+            </section>
+            <section id=content>
+                <div class=img style="float: right; width: 50%; margin: 20px 0px 20px 20px"></div>
+                <p class=paragCapt></p>
+                <p class=parag>Livros em uma estante, alunos em uma sala de aula, roupas dentro de um <i>closet</i>... Vários dos objetos que estamos habituados a ver no dia-a-dia são organizados em conjuntos: um conjunto de livros, um conjunto de alunos, um conjunto de roupas, dentre outros exemplos. O conjunto é um elemento chave para todo o ramo da Matemática, por tratar-se pura e simplesmente da organização de entidades, denominadas como <b>elementos</b>, em grupos, e muitos conceitos que serão abordados adiante - como, por exemplo, as <i>funções</i> - necessitarão que elementos sejam organizados na forma de conjuntos.</b></p>
+                <article style="height: 70px; margin-bottom: 30px"><div class=divInform></div></article>
+                <p class=parag>Portanto, baseado na definição de conjunto (que mostramos anteriormente), iremos desenvolver todos os conceitos base que servirão para estudos posteriores e mais aprofundados! E um deles é a forma como vamos representar um determinado conjunto <i>(Confira a seguir)</i>!</p>
+                <hr>
+                <div class=img style="float: left; width: 32%; margin: 20px 35px 20px 0px"></div>
+                <p class=subCapt style="margin-top: 30px"></p>
+                <ul>
+                    <li class=parag><b>Representação tabular</b>: Os elementos são listados um por um, separados por vírgulas ou pontos e vírgulas, e agrupados dentro de chaves. Comumente os conjuntos são denominados a partir de letras maiúsculas, e caso os elementos forem letras do alfabeto, elas são escritas em minúsculo para diferenciá-los dos conjuntos em si! Confira um exemplo:</li>
+                    <p style="font-size: 40px; text-align: center"><b>A = {a, b, c, d, e}</b></p>
+                    <li class=parag><b>Diagrama de Venn-Euler</b>: Basicamente, é uma representação gráfica de um conjunto ou de vários conjuntos, por sua vez formas geométricas que englobam os seus respectivos elementos. Este tipo de diagrama supostamente foi desenvolvido pelo matemático <em class=b><b>Leonhard Euler</b></em> (<i>a autoria é incerta!</i>), mas aperfeiçoadas posteriormente pelo matemático <em class=b><b>John Venn</b></em>. Venn modificou os diagramas para que pudessem acomodar todas as relações possíveis entre os conjuntos que formam os diagramas, diferente das de Euler, que não seguiam esta regra. Confira um exemplo abaixo!</li>
+                    <div class=img style="display: none; width: 40%; float: right; margin: 0px 0px 20px 20px"></div>
+                    <li class=parag><b>Representação por propriedade</b>: Ao invés de mostrar os elementos em si, uma propriedade (ou várias) em comum entre todos os elementos é escrita entre chaves, assim como na <i>representação tabular</i>, automaticamente indicando-os!</li>
+                </ul>
+                <p class=subCapt></p>
+                <img src="https://image.flaticon.com/icons/svg/1407/1407930.svg" class=imgIlustr style="width: 200px; float: left; margin: 10px 0px 0px 10px; filter: brightness(1.05) contrast(1.2)">
+                <p class=paragCapt></p>
+                <p class=parag>Está presente onde se possa imaginar: as funções são as representações matemáticas de situações e/ou fenômenos que rodeiam o nosso cotidiano, ou as que definem modelos físicos universais, por exemplo! Baseado em nossa experiência de vida, vamos supor o seguinte exemplo: ao ir no supermercado, <b>João decide comprar uma quantidade <i>x</i> de sacos de arroz</b>. Imaginemos que João compre SOMENTE sacos de arroz: logo o preço total a pagar será baseado na quantidade de sacos que João irá comprar.</p>
+                <p class=parag>Até aqui, nos é apresentado duas grandezas variáveis (ou seja, cujo valores respectivos à cada grandeza pode alterar): a <i>quantidade de sacos de arroz comprados</i> e o <i>preço total a pagar</i>. Como o preço total depende da quantidade de sacos de arroz, dizemos que o preço total é a <i>variável dependente</i> e a quantidade a <i>variável independente</i>. Logo estabelecemos uma relação entre duas grandezas, o que qualifica-se como uma <b>função de duas variáveis</b> (<i>que será fundamental nos próximos tópicos</i>).</p>
+                <article style="height: 70px"><div class=divInform></div></article>
+                <p class="parag coluna">
+                    <!--img src="https://image.flaticon.com/icons/png/512/305/305385.png" class=imgIlustr style="width: 45%; float: left; margin: 15px 15px 0px 0px; filter: brightness(0.95) contrast(1.3)">
+                    <img src="https://image.flaticon.com/icons/png/512/361/361919.png" class=imgIlustr style="width: 45%; float: right; margin: 20px 0px 0px 20px; filter: brightness(0.8) contrast(1.6)"-->
+                    Além disso, podemos expandir ainda mais a nossa situação: ao invés de somente sacos de arroz, João poderá comprar, por exemplo, determinada <i>quantidade de quilos de pães franceses <b>(cacetinhos)</b></i>, alguma <i>quantidade de pacotes de uma determinada marca de salgadinhos</i>, e dentre outros inúmeros itens que podemos imaginar. Como a quantidade destes itens não dependem da mudança dos valores de uma outra variável, elas serão definidas ainda como <b>variáveis independentes</b>, diferente do <i>preço total a pagar</i>, que dependerá, além da quantidade de cada variável, de uma constante associada a cada uma (no caso, <b>o preço dos produtos</b>). Logo, estamos trabalhando com <b>funções de mais de duas variáveis</b>, em que somente uma delas é dependente (<i>que não serão abordadas nos próximos tópicos, como estudo do gráfico</i>).
+                </p>
+                <hr>
+                <article class=coluna style="margin-top: 30px">
+                    <div class=img></div>
+                    <p class=parag>Uma função de duas variáveis pode ser representada através da <i>relação dos valores de dois conjuntos</i>: um deles representando a <i>variável independente</i>, denominado como <b>Domínio</b>; e o outro representando a <i>variável dependente</i>, denominado como <b>Contradomínio</b>. Se voltarmos ao primeiro exemplo do supermercado, os valores da quantidade de sacos de arroz estarão contidos no Domínio, enquanto os valores dos preços totais pertencerão ao Contradomínio.</p>
+                    <p class=parag>Para facilitar o entendimento do conceito de função, vamos nos referir à variável indenpendente pela incógnita <i>x</i> e à variável dependente pela incógnita <i>y</i>, e a lei da função como <i>f(x)</i> = <i>y</i>.</p>
+                    <p class=parag>Entretanto, nem todas as relações entre dois conjuntos podem ser categorizadas como funções! As condições para que exista uma função são as seguintes:</p>
+                    <div class=divContent>
+                        <div>
+                            <ul>
+                                <li class=parag>Todos os elementos <i>x</i> do Domínio devem estar associados à algum elemento <i>y</i> do Contradomínio!</li>
+                                <li class=parag>Um elemento <i>y</i> do Contradomínio pode estar associado a um ou vários elementos <i>x</i> do Domínio. Contudo, um elemento <i>x</i> do Domínio não pode estar associado a mais de um elemento <i>y</i> do Contradomínio.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class=parag>As condições acima não foram esclarecidas? Vamos retomar o exemplo da relação funcional entre os conjuntos de formas e cores, que vimos anteriormente. Cada condição acima, respectivamente, seria equivalente a dizer para a função de formas e cores que:</p>
+                    <div class=divContent>
+                        <div>
+                            <ul>
+                                <li class=parag>Todas as formas devem estar associadas à alguma cor!</li>
+                                <li class=parag>Uma cor pode preencher várias formas, mas uma forma não pode possuir mais de uma cor!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <p class=paragCapt></p>
+                <p class=paragCapt></p>
+                <p class=paragCapt></p>
+                <p class=paragCapt></p>
+                <p class=paragCapt></p>
+                <p class=paragCapt></p>
+                <p class=paragCapt></p>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div><span title="Ricardo Augusto"><img src="eu.jpg" height=80></span><p>Criado por Ricardo Augusto Müller Germani</p></div>
+            </div>
+            <hr>
+            <div style="height: 70px">
+                <span title="Facebook"><a href="https://www.facebook.com/ricardoaugusto.mullergermani"><img src="https://image.flaticon.com/icons/png/512/59/59439.png" height=60></a></span>
+                <span title="Twitter"><a href="https://twitter.com/rixarlisson"><img src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Twitter_NEW.png" height=60></a></span>
+                <span title="Instagram"><a href="https://www.instagram.com/ricardo_augusto2644"><img src="https://image.flaticon.com/icons/png/512/174/174855.png" height=60></a></span>
+                <span title="GitHub"><a href="https://github.com/ricardo-project"><img src="https://i1.wp.com/news.bitcoin.com/wp-content/uploads/2018/06/880593_media_512x512-300x300.png?resize=241%2C241&ssl=1" height=60></a></span>
+                <span title="Conheça a instituição que estuda o autor!"><a href="http://passofundo.ifsul.edu.br/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Instituto_Federal_Marca_2015.svg/1200px-Instituto_Federal_Marca_2015.svg.png" height=60></a></span>
+            </div>
+            <p style="font-size: 20px"><span title="Gmail"><img src="https://www.freepngimg.com/download/gmail/66436-play-google-icons-computer-email-gmail.png" height=30></span><b>E-mail para contato ou sugestão de conteúdo: <i>ricardoamgermani@gmail.com</i></b></p>
+            <p>2020 - O conhecimento é universal!</p>
+        </footer>
+    </body>
+    <script src="materias.js"></script>
+    <script src="index.js"></script>
+    <script>
+        var conjDivsIntrod = new Array()
+        var conjFuncGph = ["Senóide", "Cossenóide", "Reta", "Parábola", "Curva exponencial"];
+        for(let h = 0; h <= 4; h++) {
+            let newDiv = document.createElement("div");
+            if(h == 0) {
+                newDiv.style.marginLeft = "0px"
+                newDiv.style.background = "rgb(255,191,207)"
+            } else if(h == 4) {
+                newDiv.style.marginRight = "0px"
+            } document.querySelector("#introdPag > div").insertBefore(newDiv, document.querySelector("#introdPag > div > div.reta"))
+            conjDivsIntrod.push(newDiv)
+            const hCons = h
+            newDiv.addEventListener("click", function() {
+                if(hCons !== numFuncGph) {
+                    if(hCons > numFuncGph) {
+                        for(let j = numFuncGph + 1; j <= hCons; j++) {
+                            conjDivsIntrod[j].style.background = "rgb(255,191,207)"
+                        }
+                    } else {
+                        for(let j = hCons + 1; j <= numFuncGph; j++) {
+                            conjDivsIntrod[j].style.background = "rgb(127,95,103)"
+                        }
+                    } document.querySelector("#introdPag > div > div.reta#retaIntrodPag > div").style.backgroundPosition = (hCons*60 - 255) + "px";
+                    document.querySelector("#introdPag > p > b").textContent = conjFuncGph[hCons]
+                    numFuncGph = hCons
+                    drawGphIntrod()
+                    drawGphFunct()
+                }
+            })
+        }
+    </script>
+</html>
